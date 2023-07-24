@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import HeroButton from "./HeroButton";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
@@ -10,23 +10,16 @@ const Hero = () => {
       )}
     >
       <div className="container mx-auto overflow-auto">
-        <nav
-          className={twMerge(
-            "my-5 flex text-xl rounded-xl overflow-hidden",
-            "backdrop-blur-sm bg-white/20 shadow-lg text-black",
-            "hover:shadow-white hover:text-white transition"
-          )}
-        >
-          <p className="px-12 py-6">Title</p>
-
-          <HeroButton className="ml-auto">Home</HeroButton>
-          <HeroButton>Pages</HeroButton>
-          <HeroButton>Contact</HeroButton>
-        </nav>
+        <Navbar />
 
         <div className="text-center">
-          <h1 className="text-9xl">Hero</h1>
-          <h3>Lorem ipsum dolor sit amet.</h3>
+          <h1 className="text-9xl">@zschuah</h1>
+          <h3>
+            An engineering graduate with a strong interest in web development,
+            using React, Vue and Angular, with over 18 months of working
+            experience in the banking sector and half a year of teaching React
+            to new trainees.
+          </h3>
         </div>
       </div>
     </section>

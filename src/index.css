@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --grad-x: 100px;
+  --grad-y: 100px;
+}
+
 h1 {
   @apply text-4xl;
 }

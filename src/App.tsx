@@ -12,8 +12,7 @@ function App() {
       <Hero />
 
       <main className="container mx-auto">
-        <h2>Card Multi Color</h2>
-        <h3>Red</h3>
+        <h2>React Projects</h2>
         <div
           className="grid grid-cols-3 gap-2 group/outer"
           onMouseMove={(e) => {
@@ -26,11 +25,13 @@ function App() {
               key={i}
               clientX={clientX}
               clientY={clientY}
-              color="red"
+              color="blue"
             />
           ))}
         </div>
       </main>
+
+      <div className="mt-60"></div>
     </div>
   );
 }

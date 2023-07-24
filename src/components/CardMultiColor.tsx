@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 type PropTypes = {
   clientX: number;
   clientY: number;
-  color: string;
+  color?: "red" | "green" | "blue";
 };
 
 const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
@@ -29,6 +29,7 @@ const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
       className={twMerge(
         "rounded-lg h-60 relative group/inner cursor-pointer",
         "transition hover:shadow-lg",
+        "hover:shadow-white",
         color === "red" && "hover:shadow-red-500",
         color === "green" && "hover:shadow-green-500",
         color === "blue" && "hover:shadow-blue-500"
@@ -39,6 +40,7 @@ const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
       <span
         className={twMerge(
           "rounded-lg absolute inset-0 z-30 bg-gradient-radial-lg opacity-0 transition duration-500 group-hover/inner:opacity-100",
+          "to-white/[0.06]",
           color === "red" && "to-red-500/[0.1]",
           color === "green" && "to-green-500/[0.1]",
           color === "blue" && "to-blue-500/[0.1]"
@@ -69,6 +71,7 @@ const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
       <span
         className={twMerge(
           "rounded-lg absolute inset-0 z-10 bg-gradient-radial-sm opacity-0 transition duration-500 group-hover/outer:opacity-100",
+          "to-white/[0.3]",
           color === "red" && "to-red-500/[0.9]",
           color === "green" && "to-green-500/[0.9]",
           color === "blue" && "to-blue-500/[0.9]"
