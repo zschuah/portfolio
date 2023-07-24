@@ -1,17 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { useProjContext } from "../context/ProjContext";
 
 type PropTypes = {
   clientX: number;
   clientY: number;
-  color?: "red" | "green" | "blue";
   proj: any;
 };
 
-const CardMultiColor = ({ clientX, clientY, color, proj }: PropTypes) => {
+const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {
   const cardRef = useRef<HTMLDivElement>(null!);
   const [posX, setPosX] = useState(100);
   const [posY, setPosY] = useState(100);
+
+  const { openId, handleOpenId } = useProjContext();
 
   const handleMouseMove = () => {
     const bounds = cardRef.current.getBoundingClientRect();
@@ -27,12 +29,14 @@ const CardMultiColor = ({ clientX, clientY, color, proj }: PropTypes) => {
 
   return (
     <div
+      onClick={() => handleOpenId(proj.id)}
       className={twMerge(
-        "rounded-lg h-60 relative group/inner cursor-pointer",
+        "rounded-lg h-60 relative group/inner cursor-pointer z-40",
+        openId === proj.id && "-translate-y-20",
         "transition hover:shadow-lg hover:shadow-white",
-        color === "red" && "hover:shadow-red-500",
-        color === "green" && "hover:shadow-green-500",
-        color === "blue" && "hover:shadow-blue-500"
+        proj.frame === "angular" && "hover:shadow-red-500",
+        proj.frame === "vue" && "hover:shadow-green-500",
+        proj.frame === "react" && "hover:shadow-blue-500"
       )}
       ref={cardRef}
     >
@@ -42,9 +46,9 @@ const CardMultiColor = ({ clientX, clientY, color, proj }: PropTypes) => {
           "rounded-lg absolute inset-0 z-30 bg-gradient-radial-lg opacity-0",
           "transition duration-500 group-hover/inner:opacity-100",
           "to-white/[0.06]",
-          color === "red" && "to-red-500/[0.1]",
-          color === "green" && "to-green-500/[0.1]",
-          color === "blue" && "to-blue-500/[0.1]"
+          proj.frame === "angular" && "to-red-500/[0.1]",
+          proj.frame === "vue" && "to-green-500/[0.1]",
+          proj.frame === "react" && "to-blue-500/[0.1]"
         )}
       ></span>
 
@@ -63,8 +67,8 @@ const CardMultiColor = ({ clientX, clientY, color, proj }: PropTypes) => {
           <p>{posY}</p> */}
           <h4>{proj.name}</h4>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus sint
-            pariatur quod, at ratione doloribus culpa blanditiis ab est debitis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            animi vitae aspernatur ut in eius.
           </p>
         </div>
       </div>
@@ -72,11 +76,12 @@ const CardMultiColor = ({ clientX, clientY, color, proj }: PropTypes) => {
       {/* CARD BORDER - less transparent */}
       <span
         className={twMerge(
-          "rounded-lg absolute inset-0 z-10 bg-gradient-radial-sm opacity-0 transition duration-500 group-hover/outer:opacity-100",
+          "rounded-lg absolute inset-0 z-10 bg-gradient-radial-sm opacity-0",
+          "transition duration-500 group-hover/outer:opacity-100",
           "to-white/[0.3]",
-          color === "red" && "to-red-500/[0.9]",
-          color === "green" && "to-green-500/[0.9]",
-          color === "blue" && "to-blue-500/[0.9]"
+          proj.frame === "angular" && "to-red-500/[0.9]",
+          proj.frame === "vue" && "to-green-500/[0.9]",
+          proj.frame === "react" && "to-blue-500/[0.9]"
         )}
       ></span>
     </div>
