@@ -66,10 +66,8 @@ const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {
           {/* <p>{posX}</p>
           <p>{posY}</p> */}
           <h4>{proj.name}</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-            animi vitae aspernatur ut in eius.
-          </p>
+          <small>{proj.year}</small>
+          <p>{proj.desc}</p>
         </div>
       </div>
 

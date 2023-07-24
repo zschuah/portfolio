@@ -1,4 +1,5 @@
 import { FaGithubSquare } from "react-icons/fa";
+import { IoEnter, IoInformationCircle } from "react-icons/io5";
 import { twMerge } from "tailwind-merge";
 import Button from "../layout/Button";
 
@@ -19,13 +20,13 @@ const CardActions = ({ projFrame }: PropTypes) => {
       )}
     >
       <Button>
-        <FaGithubSquare className="text-4xl" />
+        <FaGithubSquare className="text-3xl" />
       </Button>
       <Button>
-        <FaGithubSquare className="text-4xl" />
+        <IoInformationCircle className="text-3xl" />
       </Button>
       <Button>
-        <FaGithubSquare className="text-4xl" />
+        <IoEnter className="text-3xl" />
       </Button>
     </div>
   );
