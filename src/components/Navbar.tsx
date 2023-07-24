@@ -10,7 +10,7 @@ const Navbar = () => {
         "hover:shadow-white hover:text-white transition"
       )}
     >
-      <p className="px-12 py-6">Title</p>
+      <p className="px-12 py-6">@zschuah</p>
 
       <HeroButton className="ml-auto">Home</HeroButton>
       <HeroButton>Pages</HeroButton>

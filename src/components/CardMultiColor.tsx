@@ -5,9 +5,10 @@ type PropTypes = {
   clientX: number;
   clientY: number;
   color?: "red" | "green" | "blue";
+  proj: any;
 };
 
-const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
+const CardMultiColor = ({ clientX, clientY, color, proj }: PropTypes) => {
   const cardRef = useRef<HTMLDivElement>(null!);
   const [posX, setPosX] = useState(100);
   const [posY, setPosY] = useState(100);
@@ -28,8 +29,7 @@ const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
     <div
       className={twMerge(
         "rounded-lg h-60 relative group/inner cursor-pointer",
-        "transition hover:shadow-lg",
-        "hover:shadow-white",
+        "transition hover:shadow-lg hover:shadow-white",
         color === "red" && "hover:shadow-red-500",
         color === "green" && "hover:shadow-green-500",
         color === "blue" && "hover:shadow-blue-500"
@@ -39,7 +39,8 @@ const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
       {/* BEFORE ELEMENT - more transparent */}
       <span
         className={twMerge(
-          "rounded-lg absolute inset-0 z-30 bg-gradient-radial-lg opacity-0 transition duration-500 group-hover/inner:opacity-100",
+          "rounded-lg absolute inset-0 z-30 bg-gradient-radial-lg opacity-0",
+          "transition duration-500 group-hover/inner:opacity-100",
           "to-white/[0.06]",
           color === "red" && "to-red-500/[0.1]",
           color === "green" && "to-green-500/[0.1]",
@@ -58,8 +59,9 @@ const CardMultiColor = ({ clientX, clientY, color }: PropTypes) => {
         </div>
 
         <div className="w-2/3 p-2">
-          <p>{posX}</p>
-          <p>{posY}</p>
+          {/* <p>{posX}</p>
+          <p>{posY}</p> */}
+          <h4>{proj.name}</h4>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus sint
             pariatur quod, at ratione doloribus culpa blanditiis ab est debitis.
