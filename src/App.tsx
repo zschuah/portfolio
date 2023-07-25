@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import db from "./data/db.json";
+import Navbar from "./components/Navbar";
+import db from "./assets/db.json";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
-import Navbar from "./components/Navbar";
 
 const projectList = db.projects;
 export type ProjectType = (typeof projectList)[number];
@@ -11,7 +11,7 @@ export type ProjectType = (typeof projectList)[number];
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home projectList={projectList} />} />

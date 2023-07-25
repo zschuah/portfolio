@@ -1,20 +1,17 @@
 import { twMerge } from "tailwind-merge";
-import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <section
-      className={twMerge(
-        "h-[75vh] bg-gradient-to-b",
-        "from-[#00c896] via-[#006e87] to-[#222222]"
-      )}
-    >
+    <section className="bg-gradient-to-b from-[#00c896] via-[#006e87] to-[#222222]">
       <div className="container mx-auto overflow-auto">
-        <Navbar />
-
-        <div className="text-center">
-          <h1 className="text-9xl">@zschuah</h1>
-          <h3>
+        <div
+          className={twMerge(
+            "flex flex-col justify-center items-center",
+            "h-[75vh] gap-8"
+          )}
+        >
+          <h1 className="text-8xl">@zschuah</h1>
+          <h3 className="text-center">
             An engineering graduate with a strong interest in web development,
             using React, Vue and Angular, with over 18 months of working
             experience in the banking sector and half a year of teaching React
