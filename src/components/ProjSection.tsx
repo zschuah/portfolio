@@ -32,7 +32,11 @@ const ProjSection = ({ sectionName, projects }: PropTypes) => {
           .map((proj) => (
             <div key={proj.id} className="relative">
               <CardMultiColor clientX={clientX} clientY={clientY} proj={proj} />
-              <CardActions projFrame={proj.frame} projUrl={proj.url} />
+              <CardActions
+                projId={proj.id}
+                projFrame={proj.frame}
+                projUrl={proj.url}
+              />
             </div>
           ))}
       </div>

@@ -6,7 +6,7 @@ type PropTypes = {
   [x: string]: any;
 };
 
-const HeroButton = ({ children, className, ...rest }: PropTypes) => {
+const NavButton = ({ children, className, ...rest }: PropTypes) => {
   return (
     <button
       {...rest}
@@ -17,4 +17,4 @@ const HeroButton = ({ children, className, ...rest }: PropTypes) => {
   );
 };
 
-export default HeroButton;
+export default NavButton;

@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import HeroButton from "./HeroButton";
+import NavButton from "./NavButton";
 
 const Navbar = () => {
   return (
@@ -12,9 +12,9 @@ const Navbar = () => {
     >
       <p className="px-12 py-6">@zschuah</p>
 
-      <HeroButton className="ml-auto">Home</HeroButton>
-      <HeroButton>Pages</HeroButton>
-      <HeroButton>Contact</HeroButton>
+      <NavButton className="ml-auto">Home</NavButton>
+      <NavButton>Pages</NavButton>
+      <NavButton>Contact</NavButton>
     </nav>
   );
 };

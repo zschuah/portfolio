@@ -1,31 +1,22 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Hero from "./components/Hero";
-import ProjSection from "./components/ProjSection";
 import db from "./data/db.json";
-import { ProjProvider } from "./context/ProjContext";
+import Home from "./pages/Home";
+import Info from "./pages/Info";
+import Navbar from "./components/Navbar";
 
 const projectList = db.projects;
 export type ProjectType = (typeof projectList)[number];
 
 function App() {
-  const [sectionList] = useState(["React", "Angular", "Vue"]);
-
   return (
     <div className="App">
-      <Hero />
+      {/* <Navbar /> */}
 
-      <main>
-        <ProjProvider>
-          {sectionList.map((section) => (
-            <ProjSection
-              key={section}
-              sectionName={section}
-              projects={projectList}
-            />
-          ))}
-        </ProjProvider>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home projectList={projectList} />} />
+        <Route path="/info/:id" element={<Info projectList={projectList} />} />
+      </Routes>
 
       <div className="mt-60"></div>
     </div>

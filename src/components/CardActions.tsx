@@ -1,17 +1,25 @@
 import { FaGithubSquare } from "react-icons/fa";
 import { IoEnter, IoInformationCircle } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import { twMerge } from "tailwind-merge";
 import Button from "../layout/Button";
 
 type PropTypes = {
+  projId: string;
   projFrame: string;
   projUrl: string;
 };
 
-const CardActions = ({ projFrame, projUrl }: PropTypes) => {
-  const handleOpenWindow = (url: string) => {
-    window.open(url, "_blank", "noreferrer");
+const CardActions = ({ projId, projFrame, projUrl }: PropTypes) => {
+  const navigate = useNavigate();
+
+  const handleOpenWindow = () => {
+    window.open(projUrl, "_blank", "noreferrer");
+  };
+
+  const handleNavigate = () => {
+    navigate("/info/" + projId);
   };
 
   return (
@@ -31,13 +39,17 @@ const CardActions = ({ projFrame, projUrl }: PropTypes) => {
       </Button>
 
       <Tooltip id="tt-info" className="z-50 shadow" />
-      <Button data-tooltip-id="tt-info" data-tooltip-content="Info">
+      <Button
+        onClick={handleNavigate}
+        data-tooltip-id="tt-info"
+        data-tooltip-content="Info"
+      >
         <IoInformationCircle className="text-3xl" />
       </Button>
 
       <Tooltip id="tt-site" className="z-50 shadow" />
       <Button
-        onClick={() => handleOpenWindow(projUrl)}
+        onClick={handleOpenWindow}
         data-tooltip-id="tt-site"
         data-tooltip-content="Go to Site"
       >
