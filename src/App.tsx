@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import projects from "./assets/projects";
 import Navbar from "./components/Navbar";
-import db from "./assets/db.json";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
 
-const projectList = db.projects;
+const projectList = projects();
 export type ProjectType = (typeof projectList)[number];
 
 function App() {

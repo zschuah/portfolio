@@ -19,7 +19,6 @@ const Navbar = () => {
       <NavButton onClick={() => navigate("/")} className="ml-auto">
         Home
       </NavButton>
-      <NavButton>Pages</NavButton>
       <NavButton>Contact</NavButton>
     </nav>
   );

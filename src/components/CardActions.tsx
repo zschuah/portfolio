@@ -14,8 +14,8 @@ type PropTypes = {
 const CardActions = ({ projId, projFrame, projUrl }: PropTypes) => {
   const navigate = useNavigate();
 
-  const handleOpenWindow = () => {
-    window.open(projUrl, "_blank", "noreferrer");
+  const handleOpenWindow = (link: string) => {
+    window.open(link, "_blank", "noreferrer");
   };
 
   const handleNavigate = () => {
@@ -49,7 +49,7 @@ const CardActions = ({ projId, projFrame, projUrl }: PropTypes) => {
 
       <Tooltip id="tt-site" className="z-50 shadow" />
       <Button
-        onClick={handleOpenWindow}
+        onClick={() => handleOpenWindow(projUrl)}
         data-tooltip-id="tt-site"
         data-tooltip-content="Go to Site"
       >

@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 type PropTypes = {
   children: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -9,7 +11,11 @@ const Button = ({ children, onClick, ...rest }: PropTypes) => {
     <button
       {...rest}
       onClick={onClick}
-      className="px-2 py-2 bg-slate-500 rounded-lg hover:bg-slate-400"
+      className={twMerge(
+        "px-2 py-2 bg-slate-600 rounded-lg",
+        "hover:bg-slate-500 active:bg-slate-400",
+        "flex items-center gap-1"
+      )}
     >
       {children}
     </button>

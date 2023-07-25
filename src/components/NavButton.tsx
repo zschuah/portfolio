@@ -12,7 +12,10 @@ const NavButton = ({ children, onClick, className, ...rest }: PropTypes) => {
     <button
       {...rest}
       onClick={onClick}
-      className={twMerge("px-12 py-6 hover:bg-white/30", className)}
+      className={twMerge(
+        "px-12 py-6 hover:bg-white/30 active:bg-white/40",
+        className
+      )}
     >
       {children}
     </button>

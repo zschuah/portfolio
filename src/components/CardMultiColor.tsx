@@ -58,7 +58,7 @@ const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {
         <div className="w-1/3">
           <img
             className="w-full h-full object-cover"
-            src="https://source.unsplash.com/random/?nature"
+            src={proj.imgList[0]}
             alt="nature"
           />
         </div>
