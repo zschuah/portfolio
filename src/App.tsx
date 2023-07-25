@@ -5,9 +5,11 @@ import ProjSection from "./components/ProjSection";
 import db from "./data/db.json";
 import { ProjProvider } from "./context/ProjContext";
 
+const projectList = db.projects;
+export type ProjectType = (typeof projectList)[number];
+
 function App() {
   const [sectionList] = useState(["React", "Angular", "Vue"]);
-  const projectList = db.projects;
 
   return (
     <div className="App">

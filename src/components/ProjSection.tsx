@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { ProjectType } from "../App";
 import CardActions from "./CardActions";
 import CardMultiColor from "./CardMultiColor";
 
 type PropTypes = {
   sectionName: string;
-  projects: any[];
+  projects: ProjectType[];
 };
 
 const ProjSection = ({ sectionName, projects }: PropTypes) => {
@@ -31,7 +32,7 @@ const ProjSection = ({ sectionName, projects }: PropTypes) => {
           .map((proj) => (
             <div key={proj.id} className="relative">
               <CardMultiColor clientX={clientX} clientY={clientY} proj={proj} />
-              <CardActions projFrame={proj.frame} />
+              <CardActions projFrame={proj.frame} projUrl={proj.url} />
             </div>
           ))}
       </div>

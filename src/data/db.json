@@ -5,77 +5,88 @@
       "name": "PeepoSuite",
       "frame": "react",
       "desc": "My very first portfolio site, showcasing my apps from 2020 to 2022! This was created using Framer Motion, Styled Components, and React Responsive.",
-      "year": 2021
+      "year": 2021,
+      "url": "https://peeposuite.netlify.app/"
     },
     {
       "id": "E51T81",
       "name": "Ignite",
       "frame": "react",
       "desc": "My first try into React, done with RAWG video games API. Framer Motion, Styled Components and Intersection Observer are included.",
-      "year": 2021
+      "year": 2021,
+      "url": "https://ignite-zschuah.netlify.app/"
     },
     {
       "id": "EW8UC5",
       "name": "PeepoEats",
       "frame": "angular",
       "desc": "Food rating website using Angular and Firebase, based on chess Elo system and inspired by FaceMash.",
-      "year": 2020
+      "year": 2020,
+      "url": "https://peepoeats.netlify.app/"
     },
     {
       "id": "8YTCRM",
       "name": "PeepoEats Reset",
       "frame": "angular",
       "desc": "Same food rating website without backend, where ratings reset on page refresh.",
-      "year": 2020
+      "year": 2020,
+      "url": "https://peepoeats-reset.netlify.app/"
     },
     {
       "id": "1XHWEC",
       "name": "Merry Christmas Corgi",
       "frame": "vue",
       "desc": "Website that fetches random Corgi images from Unsplash API. Image toggles between Christmas tree and random Corgi on request.",
-      "year": 2022
+      "year": 2022,
+      "url": "https://merry-christmas-corgi.netlify.app/"
     },
     {
       "id": "MWRUD1",
       "name": "Photo Toto",
       "frame": "vue",
       "desc": "A memory flashcard game with Wordle-like guess distribution, using Charts.css for charting.",
-      "year": 2022
+      "year": 2022,
+      "url": "https://photo-toto.netlify.app/"
     },
     {
       "id": "XUM1T4",
       "name": "BaiToto",
       "frame": "vue",
       "desc": "A website for my cousin's YouTube channel, BaiToto, with a game to find her puppy Toto among cards using some CSS Card Tricks. Vue Router is included.",
-      "year": 2021
+      "year": 2021,
+      "url": "https://baitoto.netlify.app/"
     },
     {
       "id": "X24CUC",
       "name": "PeepoBitcoin",
       "frame": "vue",
       "desc": "Imagine tracking Bitcoin returns locally without logging into your account. All you need is your purchase price and amount.",
-      "year": 2021
+      "year": 2021,
+      "url": "https://peepobitcoin.netlify.app/"
     },
     {
       "id": "TKMEDX",
       "name": "PeepoCountdown",
       "frame": "vue",
       "desc": "Simple countdown app originally made for a friend, inspired by the anticipation to his quitting date.",
-      "year": 2020
+      "year": 2020,
+      "url": "https://peepocountdown.netlify.app/"
     },
     {
       "id": "P5HTWT",
       "name": "PeepoMoney",
       "frame": "vue",
       "desc": "A money growth app relative to monthly savings, just to show how much is saved every second.",
-      "year": 2020
+      "year": 2020,
+      "url": "https://peepomoney.netlify.app/"
     },
     {
       "id": "ECUKTM",
       "name": "PeepoCharts",
       "frame": "vue",
       "desc": " A fake stock chart generator using Vue and Google Charts, with adjustable price and volatility. My very first Vue app!",
-      "year": 2020
+      "year": 2020,
+      "url": "https://peepocharts.netlify.app/"
     }
   ]
 }

@@ -6,9 +6,14 @@ import Button from "../layout/Button";
 
 type PropTypes = {
   projFrame: string;
+  projUrl: string;
 };
 
-const CardActions = ({ projFrame }: PropTypes) => {
+const CardActions = ({ projFrame, projUrl }: PropTypes) => {
+  const handleOpenWindow = (url: string) => {
+    window.open(url, "_blank", "noreferrer");
+  };
+
   return (
     <div
       className={twMerge(
@@ -31,7 +36,11 @@ const CardActions = ({ projFrame }: PropTypes) => {
       </Button>
 
       <Tooltip id="tt-site" className="z-50 shadow" />
-      <Button data-tooltip-id="tt-site" data-tooltip-content="Site">
+      <Button
+        onClick={() => handleOpenWindow(projUrl)}
+        data-tooltip-id="tt-site"
+        data-tooltip-content="Go to Site"
+      >
         <IoEnter className="text-3xl" />
       </Button>
     </div>
