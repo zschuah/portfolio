@@ -14,7 +14,7 @@ const Button = ({ children, onClick, ...rest }: PropTypes) => {
       className={twMerge(
         "px-2 py-2 bg-slate-600 rounded-lg",
         "hover:bg-slate-500 active:bg-slate-400",
-        "flex items-center gap-1"
+        "flex items-center gap-1 shadow shadow-white"
       )}
     >
       {children}

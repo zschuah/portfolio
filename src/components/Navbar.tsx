@@ -9,9 +9,8 @@ const Navbar = () => {
     <nav
       className={twMerge(
         "my-5 flex text-xl rounded-xl overflow-hidden",
-        "backdrop-blur-sm bg-white/20 shadow-lg text-black",
-        "hover:shadow-white hover:text-white transition",
-        "fixed w-full container left-1/2 -translate-x-1/2 z-50"
+        "backdrop-blur-sm bg-white/20 shadow-lg shadow-white",
+        "fixed w-11/12 container left-1/2 -translate-x-1/2 z-50"
       )}
     >
       <p className="px-12 py-6">@zschuah</p>

@@ -1,6 +1,7 @@
+import { useEffect } from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { IoBackspace, IoEnter } from "react-icons/io5";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ProjectType } from "../App";
 import Button from "../layout/Button";
 
@@ -18,17 +19,21 @@ const Info = ({ projectList }: PropTypes) => {
     window.open(link, "_blank", "noreferrer");
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-gradient-to-b from-[#006e87] to-[#222]">
-      <section className="container mx-auto pt-28 px-2 md:px-20 text-center">
-        <h1 className="text-7xl">{name}</h1>
+      <section className="container mx-auto pt-32 px-8 md:px-20 text-center">
+        <h1 className="text-5xl md:text-7xl">{name}</h1>
         <h2>{year}</h2>
         <small>{params.id}</small>
 
         <p className="py-10">{descFull}</p>
 
         <div className="flex justify-center gap-4">
-          <Button onClick={() => navigate("/")}>
+          <Button onClick={() => navigate(-1)}>
             <IoBackspace className="text-3xl" />
             <span className="hidden sm:inline">Go Back</span>
           </Button>
