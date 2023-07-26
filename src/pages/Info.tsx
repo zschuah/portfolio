@@ -29,7 +29,7 @@ const Info = ({ projectList }: PropTypes) => {
   }
 
   return (
-    <div className="bg-gradient-to-b from-[#006e87] to-[#222]">
+    <div className="bg-gradient-to-b from-[#006E87] to-[#222]">
       <section className="container mx-auto pt-32 px-8 md:px-20 text-center">
         <h1 className="text-5xl md:text-7xl">{name}</h1>
 

@@ -4,6 +4,7 @@ import projects from "./assets/projects";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
+import Contact from "./pages/Contact";
 
 const projectList = projects();
 export type ProjectType = (typeof projectList)[number];
@@ -16,10 +17,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home projectList={projectList} />} />
         <Route path="/info/:id" element={<Info projectList={projectList} />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
-      <div className="mt-60"></div>
+      <div className="mt-20"></div>
     </div>
   );
 }

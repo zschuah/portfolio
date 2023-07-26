@@ -45,7 +45,7 @@ const projects = () => {
       imgList: [officecocktail, officecocktail1],
       iconList: [
         { name: "React", img: react },
-        { name: "Redux", img: redux },
+        { name: "Redux Toolkit", img: redux },
         { name: "Tailwind CSS", img: tailwind },
         { name: "DaisyUI", img: daisyui },
       ],

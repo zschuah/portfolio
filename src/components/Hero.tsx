@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-[#00c896] via-[#006e87] to-[#222]">
+    <section className="bg-gradient-to-b from-[#00C896] via-[#006E87] to-[#222]">
       <div className="container mx-auto overflow-auto">
         <div
           className={twMerge(

@@ -20,7 +20,7 @@ const Navbar = () => {
         <IoHome />
         <span className="hidden sm:inline">Home</span>
       </NavButton>
-      <NavButton>
+      <NavButton onClick={() => navigate("/contact")}>
         <IoCall />
         <span className="hidden sm:inline">Contact</span>
       </NavButton>
