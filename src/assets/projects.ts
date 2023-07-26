@@ -56,7 +56,7 @@ const projects = () => {
       year: 2023,
       url: "https://zschuah-tailwind.netlify.app/lorem-picsum",
       descFull:
-        "This was my first foray into Tailwind CSS. At that point in time, there were many competing CSS libraries. Amongst them was Tailwind, which uses Utility-First Fundamentals to organise CSS in projects. While most other libraries allow you to simply import components, Tailwind forces you to build them while providing helpful utility classes. My component-building skills and CSS styling speed improved greatly because of Tailwind. This was also an avenue to incorporate Pexels and Lorem Picsum into my project to display specific and random images respectively.",
+        "This was my first foray into Tailwind CSS. I created an app that allows the user to lookup specific images using the Pexels API or to spin up random images using the Lorem Picsum API. At that point in time, there were many competing CSS libraries. Amongst them was Tailwind, which uses Utility-First Fundamentals to organise CSS in projects. While most other libraries allow you to simply import components, Tailwind forces you to build them while providing helpful utility classes. My component-building skills and CSS styling speed improved greatly because of Tailwind.",
       imgList: [mylorempicsum],
       iconList: [
         { name: "React", img: react },

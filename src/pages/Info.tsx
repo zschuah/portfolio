@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { IoBackspace, IoEnter } from "react-icons/io5";
-import { useNavigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
 import { ProjectType } from "../App";
 import Button from "../layout/Button";
-import { Tooltip } from "react-tooltip";
 
 type PropTypes = {
   projectList: ProjectType[];
@@ -23,6 +23,10 @@ const Info = ({ projectList }: PropTypes) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (!name) {
+    return <Navigate to="/" />;
+  }
 
   return (
     <div className="bg-gradient-to-b from-[#006e87] to-[#222]">
