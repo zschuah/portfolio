@@ -63,12 +63,23 @@ const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {
           />
         </div>
 
-        <div className="w-2/3 p-2">
+        <div className="w-2/3 p-2 flex flex-col">
           {/* <p>{posX}</p>
           <p>{posY}</p> */}
           <h4>{proj.name}</h4>
           <small>{proj.year}</small>
           <p className="text-sm sm:text-base">{proj.desc}</p>
+
+          <div className="flex gap-2 mt-auto ml-auto">
+            {proj.iconList.map((icon) => (
+              <img
+                key={icon.name}
+                className="h-10"
+                src={icon.img}
+                alt={icon.name}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
