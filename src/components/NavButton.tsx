@@ -13,7 +13,9 @@ const NavButton = ({ children, onClick, className, ...rest }: PropTypes) => {
       {...rest}
       onClick={onClick}
       className={twMerge(
-        "px-12 py-6 hover:bg-white/30 active:bg-white/40",
+        "px-6 py-3 sm:px-12 sm:py-6",
+        "hover:bg-white/30 active:bg-white/40",
+        "flex items-center gap-1",
         className
       )}
     >

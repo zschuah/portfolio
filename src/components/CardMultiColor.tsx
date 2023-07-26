@@ -68,7 +68,7 @@ const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {
           <p>{posY}</p> */}
           <h4>{proj.name}</h4>
           <small>{proj.year}</small>
-          <p>{proj.desc}</p>
+          <p className="text-sm sm:text-base">{proj.desc}</p>
         </div>
       </div>
 

@@ -30,7 +30,7 @@ const Info = ({ projectList }: PropTypes) => {
         <h2>{year}</h2>
         <small>{params.id}</small>
 
-        <p className="py-10">{descFull}</p>
+        <p className="py-10 text-sm sm:text-base">{descFull}</p>
 
         <div className="flex justify-center gap-4">
           <Button onClick={() => navigate(-1)}>
