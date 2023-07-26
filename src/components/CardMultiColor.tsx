@@ -74,7 +74,7 @@ const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {
             {proj.iconList.map((icon) => (
               <img
                 key={icon.name}
-                className="h-10"
+                className="h-8 sm:h-10"
                 src={icon.img}
                 alt={icon.name}
               />

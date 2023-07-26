@@ -14,7 +14,7 @@ const ProjSection = ({ sectionName, projects }: PropTypes) => {
   const [clientY, setClientY] = useState(100);
 
   return (
-    <section className="container mx-auto px-8">
+    <section className="container mx-auto px-4 sm:px-8">
       <h2 className="my-10">{sectionName} Projects</h2>
 
       <div

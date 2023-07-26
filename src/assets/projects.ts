@@ -5,6 +5,7 @@ import firebase from "./icons/firebase.png";
 import framer from "./icons/framer.png";
 import mui from "./icons/mui.png";
 import react from "./icons/react.png";
+import redux from "./icons/redux.png";
 import styled from "./icons/styled.png";
 import tailwind from "./icons/tailwind.png";
 import vue from "./icons/vue.png";
@@ -40,10 +41,11 @@ const projects = () => {
       year: 2023,
       url: "https://office-cocktail.netlify.app/",
       descFull:
-        "A website to lookup popular cocktails and how to make them. For every cocktail, there are ingredients and a receipe included. You also even spin up random cocktails in order to get some insight on what to include in your bar. The employee concept here was inspired by characters from The Office, hence the name. Random employees can be added and each employee will have an attached Favourite drink to him or her. This was also a platform for me to practice DaisyUI, which is a very good complement to Tailwind CSS. I have included 4 DaisyUI Themes for the user to switch around. Synthwave and Cyberpunk are my favourites!",
+        "A website to lookup popular cocktails and how to make them. For every cocktail, there are ingredients and a receipe included. You can also spin up random cocktails in order to get some insight on what to include in your bar. The employee concept here was inspired by characters from The Office, hence the name. Random employees can be added and each employee will have an attached Favourite drink to him or her. I wanted this to be an opportunity to include Redux Toolkit and Redux Toolkit Query in my project for state management. This was also a platform for me to practice DaisyUI, where I have included 4 DaisyUI Themes for the user to switch around. Synthwave and Cyberpunk are my favourites!",
       imgList: [officecocktail, officecocktail1],
       iconList: [
         { name: "React", img: react },
+        { name: "Redux", img: redux },
         { name: "Tailwind CSS", img: tailwind },
         { name: "DaisyUI", img: daisyui },
       ],
@@ -56,7 +58,7 @@ const projects = () => {
       year: 2023,
       url: "https://zschuah-tailwind.netlify.app/lorem-picsum",
       descFull:
-        "This was my first foray into Tailwind CSS. I created an app that allows the user to lookup specific images using the Pexels API or to spin up random images using the Lorem Picsum API. At that point in time, there were many competing CSS libraries. Amongst them was Tailwind, which uses Utility-First Fundamentals to organise CSS in projects. While most other libraries allow you to simply import components, Tailwind forces you to build them while providing helpful utility classes. My component-building skills and CSS styling speed improved greatly because of Tailwind.",
+        "This was my first foray into Tailwind CSS. I created an app that allows the user to lookup specific images using the Pexels API or to spin up random images using the Lorem Picsum API. At that point in time, there were many competing CSS libraries. Amongst them was Tailwind, which uses Utility-First Fundamentals to organise CSS in projects. While most other libraries allow you to simply import components, Tailwind forces you to build them while providing helpful utility classes. My component-building skills and CSS styling speed improved greatly because of Tailwind. I also dipped my toes in DaisyUI for this project, which provided components that worked well with Tailwind's architecture.",
       imgList: [mylorempicsum],
       iconList: [
         { name: "React", img: react },
@@ -84,7 +86,7 @@ const projects = () => {
       id: "4Y84M4",
       name: "PeepoSuite",
       frame: "react",
-      desc: "My very first portfolio site, showcasing my apps from 2020 to 2022! This was created using Framer Motion, Styled Components, and React Responsive.",
+      desc: "My very first portfolio site, showcasing my apps from 2020 to 2022! Peepo the Frog was the main theme of the site.",
       year: 2022,
       url: "https://peeposuite.netlify.app/",
       descFull:
@@ -100,7 +102,7 @@ const projects = () => {
       id: "E51T81",
       name: "Ignite",
       frame: "react",
-      desc: "My first try into React, done with RAWG video games API. Framer Motion, Styled Components and Intersection Observer are included.",
+      desc: "View upcoming, popular and new games here, provided by RAWG Video Games API. My first try into React!",
       year: 2021,
       url: "https://ignite-zschuah.netlify.app/",
       descFull:
@@ -177,7 +179,7 @@ const projects = () => {
       id: "XUM1T4",
       name: "BaiToto",
       frame: "vue",
-      desc: "A website for my cousin's YouTube channel, BaiToto, with a game to find her puppy Toto among cards using some CSS Card Tricks. Vue Router is included.",
+      desc: "A website for my cousin's YouTube channel, BaiToto, with a game to find her puppy Toto, using CSS Card Tricks. Vue Router is included.",
       year: 2021,
       url: "https://baitoto.netlify.app/",
       descFull:
