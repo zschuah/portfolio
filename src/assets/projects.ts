@@ -204,7 +204,7 @@ const projects = () => {
       id: "X24CUC",
       name: "PeepoBitcoin",
       frame: "vue",
-      desc: "Imagine tracking Bitcoin returns locally without logging into your account. All you need is your purchase price and amount.",
+      desc: "Tracks Bitcoin returns locally without logging into your account. All you need is your purchase price and amount.",
       year: 2021,
       url: "https://peepobitcoin.netlify.app/",
       descFull:

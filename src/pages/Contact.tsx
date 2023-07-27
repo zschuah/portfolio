@@ -1,4 +1,9 @@
-import { IoLogoLinkedin, IoMail, IoPerson } from "react-icons/io5";
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoMail,
+  IoPerson,
+} from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import headshot from "../assets/headshot.png";
@@ -7,6 +12,7 @@ const Contact = () => {
   const NAME = "Zhun Song";
   const EMAIL = "zschuah@hotmail.com";
   const LINKEDIN = "https://www.linkedin.com/in/zhun-song-chuah-363b80192/";
+  const GITHUB = "https://github.com/zschuah";
 
   return (
     <div className="bg-gradient-to-b from-[#8685EF] to-[#222]">
@@ -33,6 +39,18 @@ const Contact = () => {
               <Link
                 className="underline cursor-pointer"
                 to={LINKEDIN}
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </Link>
+            </h4>
+            <h4>
+              <IoLogoGithub />
+              <span>View my projects </span>
+              <Link
+                className="underline cursor-pointer"
+                to={GITHUB}
                 target="_blank"
                 rel="noreferrer"
               >
