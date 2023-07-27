@@ -49,6 +49,7 @@ const projects = () => {
         { name: "Tailwind CSS", img: tailwind },
         { name: "DaisyUI", img: daisyui },
       ],
+      github: "https://github.com/zschuah/office-cocktail",
     },
     {
       id: "HPRHW8",
@@ -65,6 +66,7 @@ const projects = () => {
         { name: "Tailwind CSS", img: tailwind },
         { name: "DaisyUI", img: daisyui },
       ],
+      github: "https://github.com/zschuah/zschuah-tailwind",
     },
     {
       id: "55CU55",
@@ -81,6 +83,7 @@ const projects = () => {
         { name: "Material UI", img: mui },
         { name: "Styled Components", img: styled },
       ],
+      github: "https://github.com/zschuah/css-siewdai",
     },
     {
       id: "4Y84M4",
@@ -97,6 +100,7 @@ const projects = () => {
         { name: "Framer Motion", img: framer },
         { name: "Styled Components", img: styled },
       ],
+      github: "https://github.com/zschuah/peepo-suite",
     },
     {
       id: "E51T81",
@@ -113,6 +117,7 @@ const projects = () => {
         { name: "Framer Motion", img: framer },
         { name: "Styled Components", img: styled },
       ],
+      github: "https://github.com/zschuah/ignite",
     },
     {
       id: "EW8UC5",
@@ -129,6 +134,7 @@ const projects = () => {
         { name: "Bootstrap", img: bootstrap },
         { name: "Firebase", img: firebase },
       ],
+      github: "https://github.com/zschuah/peepo-eats",
     },
     {
       id: "8YTCRM",
@@ -144,6 +150,7 @@ const projects = () => {
         { name: "Angular", img: angular },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/peepo-eats/tree/reset",
     },
     {
       id: "1XHWEC",
@@ -159,6 +166,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/merry-christmas-corgi",
     },
     {
       id: "MWRUD1",
@@ -174,6 +182,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/photo-toto",
     },
     {
       id: "XUM1T4",
@@ -189,6 +198,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/baitoto",
     },
     {
       id: "X24CUC",
@@ -204,6 +214,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/peepo-bitcoin",
     },
     {
       id: "TKMEDX",
@@ -219,6 +230,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/peepo-countdown",
     },
     {
       id: "P5HTWT",
@@ -234,6 +246,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/peepo-money",
     },
     {
       id: "ECUKTM",
@@ -249,6 +262,7 @@ const projects = () => {
         { name: "Vue", img: vue },
         { name: "Bootstrap", img: bootstrap },
       ],
+      github: "https://github.com/zschuah/peepo-charts",
     },
   ];
 };

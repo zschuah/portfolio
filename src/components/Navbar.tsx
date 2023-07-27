@@ -14,7 +14,12 @@ const Navbar = () => {
         "fixed w-11/12 container left-1/2 -translate-x-1/2 z-50"
       )}
     >
-      <p className="px-6 py-3 sm:px-12 sm:py-6">@zschuah</p>
+      <p
+        className="px-6 py-3 sm:px-12 sm:py-6 cursor-pointer"
+        onClick={() => navigate("/")}
+      >
+        @zschuah
+      </p>
 
       <NavButton className="ml-auto" onClick={() => navigate("/")}>
         <IoHome />

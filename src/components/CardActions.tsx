@@ -9,9 +9,10 @@ type PropTypes = {
   projId: string;
   projFrame: string;
   projUrl: string;
+  projGit: string;
 };
 
-const CardActions = ({ projId, projFrame, projUrl }: PropTypes) => {
+const CardActions = ({ projId, projFrame, projUrl, projGit }: PropTypes) => {
   const navigate = useNavigate();
 
   const handleOpenWindow = (link: string) => {
@@ -34,7 +35,11 @@ const CardActions = ({ projId, projFrame, projUrl }: PropTypes) => {
       )}
     >
       <Tooltip id="tt-github" className="z-50 shadow" />
-      <Button data-tooltip-id="tt-github" data-tooltip-content="Github">
+      <Button
+        onClick={() => handleOpenWindow(projGit)}
+        data-tooltip-id="tt-github"
+        data-tooltip-content="Github"
+      >
         <FaGithubSquare className="text-3xl" />
       </Button>
 

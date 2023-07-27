@@ -36,6 +36,7 @@ const ProjSection = ({ sectionName, projects }: PropTypes) => {
                 projId={proj.id}
                 projFrame={proj.frame}
                 projUrl={proj.url}
+                projGit={proj.github}
               />
             </div>
           ))}

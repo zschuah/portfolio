@@ -13,7 +13,7 @@ type PropTypes = {
 const Info = ({ projectList }: PropTypes) => {
   const navigate = useNavigate();
   const params = useParams();
-  const { name, year, descFull, imgList, url, iconList } =
+  const { name, year, descFull, imgList, url, iconList, github } =
     projectList.find((proj) => proj.id === params.id) || {};
 
   const handleOpenWindow = (link: string | undefined) => {
@@ -58,7 +58,7 @@ const Info = ({ projectList }: PropTypes) => {
             <IoBackspace className="text-3xl" />
             <span className="hidden sm:inline">Go Back</span>
           </Button>
-          <Button>
+          <Button onClick={() => handleOpenWindow(github)}>
             <FaGithubSquare className="text-3xl" />
             <span className="hidden sm:inline">Github</span>
           </Button>

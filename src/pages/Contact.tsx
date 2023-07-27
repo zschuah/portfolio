@@ -1,7 +1,7 @@
+import { IoLogoLinkedin, IoMail, IoPerson } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import headshot from "../assets/headshot.png";
 import { twMerge } from "tailwind-merge";
-import { IoPerson, IoMail, IoLogoLinkedin } from "react-icons/io5";
+import headshot from "../assets/headshot.png";
 
 const Contact = () => {
   const NAME = "Zhun Song";
@@ -13,7 +13,7 @@ const Contact = () => {
       <section
         className={twMerge(
           "container mx-auto py-32 px-8 md:px-20",
-          "flex justify-around flex-wrap"
+          "flex justify-around flex-wrap min-h-screen"
         )}
       >
         <div>
