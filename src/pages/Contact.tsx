@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   IoLogoGithub,
   IoLogoLinkedin,
@@ -13,6 +14,10 @@ const Contact = () => {
   const EMAIL = "zschuah@hotmail.com";
   const LINKEDIN = "https://www.linkedin.com/in/zhun-song-chuah-363b80192/";
   const GITHUB = "https://github.com/zschuah";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-gradient-to-b from-[#8685EF] to-[#222]">
