@@ -38,7 +38,7 @@ const CardActions = ({ projId, projFrame, projUrl, projGit }: PropTypes) => {
       <Button
         onClick={() => handleOpenWindow(projGit)}
         data-tooltip-id="tt-github"
-        data-tooltip-content="Github"
+        data-tooltip-content="GitHub"
       >
         <FaGithubSquare className="text-3xl" />
       </Button>

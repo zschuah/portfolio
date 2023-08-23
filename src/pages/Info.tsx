@@ -49,7 +49,7 @@ const Info = ({ projectList }: PropTypes) => {
         </div>
 
         <h2>{year}</h2>
-        <small>{params.id}</small>
+        <small className="font-mono">ID:{params.id}</small>
 
         <p className="py-10 text-sm sm:text-base">{descFull}</p>
 
@@ -60,7 +60,7 @@ const Info = ({ projectList }: PropTypes) => {
           </Button>
           <Button onClick={() => handleOpenWindow(github)}>
             <FaGithubSquare className="text-3xl" />
-            <span className="hidden sm:inline">Github</span>
+            <span className="hidden sm:inline">GitHub</span>
           </Button>
           <Button onClick={() => handleOpenWindow(url)}>
             <IoEnter className="text-3xl" />
