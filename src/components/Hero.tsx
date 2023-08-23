@@ -12,10 +12,9 @@ const Hero = () => {
         >
           <h1 className="text-5xl md:text-8xl">@zschuah</h1>
           <h3 className="text-center text-lg md:text-2xl max-w-5xl">
-            An engineering graduate with a strong interest in web development,
-            using React, Vue and Angular, with over 18 months of working
-            experience in the banking sector and half a year of teaching React
-            to new trainees.
+            Frontend developer driven by passion for React, Vue and Angular.
+            Working experience in developing banking applications and teaching
+            React.
           </h3>
         </div>
       </div>
