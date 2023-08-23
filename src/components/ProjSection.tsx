@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { ProjectType } from "../App";
+import { Project } from "../assets/projects";
 import CardActions from "./CardActions";
 import CardMultiColor from "./CardMultiColor";
 
 type PropTypes = {
   sectionName: string;
-  projects: ProjectType[];
+  projects: Project[];
 };
 
 const ProjSection = ({ sectionName, projects }: PropTypes) => {

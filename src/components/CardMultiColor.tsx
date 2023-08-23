@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { ProjectType } from "../App";
+import { Project } from "../assets/projects";
 import { useProjContext } from "../context/ProjContext";
 
 type PropTypes = {
   clientX: number;
   clientY: number;
-  proj: ProjectType;
+  proj: Project;
 };
 
 const CardMultiColor = ({ clientX, clientY, proj }: PropTypes) => {

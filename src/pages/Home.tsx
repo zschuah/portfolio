@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ProjectType } from "../App";
+import { Project } from "../assets/projects";
 import Hero from "../components/Hero";
 import ProjSection from "../components/ProjSection";
 import { ProjProvider } from "../context/ProjContext";
 
 type PropTypes = {
-  projectList: ProjectType[];
+  projectList: Project[];
 };
 
 const Home = ({ projectList }: PropTypes) => {

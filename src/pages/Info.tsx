@@ -3,11 +3,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { IoBackspace, IoEnter } from "react-icons/io5";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
-import { ProjectType } from "../App";
+import { Project } from "../assets/projects";
 import Button from "../layout/Button";
 
 type PropTypes = {
-  projectList: ProjectType[];
+  projectList: Project[];
 };
 
 const Info = ({ projectList }: PropTypes) => {

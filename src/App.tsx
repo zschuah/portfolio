@@ -1,15 +1,14 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import projects from "./assets/projects";
+import { getProjects } from "./assets/projects";
 import Navbar from "./components/Navbar";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
-import Contact from "./pages/Contact";
-
-const projectList = projects();
-export type ProjectType = (typeof projectList)[number];
 
 function App() {
+  const projectList = getProjects();
+
   return (
     <div className="App">
       <Navbar />
