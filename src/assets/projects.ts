@@ -157,7 +157,7 @@ const PROJECT_LIST = [
     name: "Merry Christmas Corgi",
     frame: "vue",
     desc: "Website that fetches random Corgi images from Unsplash API. Image toggles between Christmas tree and random Corgi on request.",
-    year: 2022,
+    year: 2023,
     url: "https://merry-christmas-corgi.netlify.app/",
     descFull:
       "This was a simple site that I created, testing out the Unsplash API to fetch images of random Corgis. Every time the image flips to the Christmas tree, it will post a GET request to the API to fetch another Corgi image.",

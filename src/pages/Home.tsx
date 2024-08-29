@@ -9,7 +9,7 @@ type PropTypes = {
 };
 
 const Home = ({ projectList }: PropTypes) => {
-  const [sectionList] = useState(["React", "Angular", "Vue"]);
+  const [sectionList] = useState(["React", "Vue", "Angular"]);
 
   return (
     <main>
